@@ -559,3 +559,28 @@ footer{
         padding: 40px;
     }
 }
+@media (max-height: 650px){
+    .header__content{
+        margin-top:100px;
+    }
+}
+@media (max-height: 580px){
+    .header__content{
+        margin-top:200px;
+    }
+}
+@media (max-height: 476px){
+    .header__content{
+        margin-top:300px;
+    }
+}
+@media (max-height: 372px){
+    .header__content{
+        margin-top:400px;
+    }
+}
+@media (max-height: 270px){
+    .header__content{
+        margin-top:500px;
+    }
+}
