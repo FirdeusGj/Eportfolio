@@ -227,7 +227,9 @@ button{
     line-height: 1;
 }
 .color {
-    color: #0caeff;
+    background: -webkit-linear-gradient(60deg,#67ccff,#0482c2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 p{
     line-height: 1.5;
@@ -328,7 +330,7 @@ nav,
     display:flex;
 }
 .social__link{
-    background-color: #0caeff;
+    background: linear-gradient(60deg,#67ccff,#0482c2);
     color: white;
     padding: 6px;
     width: 32px;
