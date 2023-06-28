@@ -1,4 +1,18 @@
-let contrastToggle = false
+let isModalOpen = false;
+let contrastToggle = false;
+const scaleFactor = 1 / 20
+
+function moveBackground(event){
+    const shapes = document.querySelectorAll(".shape")
+    const x = event.clientX * scaleFactor;
+    const y = event.clientY * scaleFactor;
+
+    for(let i = 0; i< shapes.length; ++i){
+        const isOdd = i % 2 !== 0;
+        const oddInteger = isOdd ? -1 : 1
+        shapes[i].style.transform = `translate(${x * oddInteger}px, ${y * oddInteger}px)`
+    }
+}
 function toggleContrast() {
     contrastToggle = !contrastToggle;
     if (contrastToggle) {
@@ -31,7 +45,6 @@ function contact(event){
         })
 }
 
-let isModalOpen = false;
 function toggleModal() {
     if(isModalOpen){
         isModalOpen = false
